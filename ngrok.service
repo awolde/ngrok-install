@@ -1,0 +1,12 @@
+[Unit]
+Description=ngrok_ssh_tunnel
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /usr/local/ngrok/run-ngrok.sh
+Type=simple
+PIDFile=/usr/local/ngrok.pid
+KillMode=process
+
+[Install]
+WantedBy=default.target

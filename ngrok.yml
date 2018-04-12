@@ -1,0 +1,5 @@
+authtoken: your_auth_here
+tunnels:
+  pub:
+    proto: tcp
+    addr: 22
